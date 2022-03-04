@@ -52,11 +52,11 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
 /**
  * Пример главной функции
  */
-fun main() {
+/*fun main() {
     val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
     println("Root product: $x1x2")
 }
-
+*/
 /**
  * Тривиальная (3 балла).
  *
@@ -68,6 +68,11 @@ fun main() {
 fun seconds(hours: Int, minutes: Int, seconds: Int): Int =
     hours * 3600 + minutes * 60 + seconds
 
+/*fun main() {
+    val res = seconds(8,20,35)
+    println("Result: $res")
+}
+*/
 /**
  * Тривиальная (1 балл)
  *
@@ -78,6 +83,11 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int =
 fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double =
     (sagenes * 48 + arshins * 16 + vershoks) * 4.445 / 100
 
+/*fun main() {
+    val res = lengthInMeters(8,2,11)
+    println("Result: $res")
+}
+О, а всё таки получилось :) */
 /**
  * Тривиальная (1 балл)
  *
@@ -87,6 +97,11 @@ fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double =
 fun angleInRadian(deg: Int, min: Int, sec: Int): Double =
     (deg + (min + sec / 60.0) / 60.0) * PI / 180.0
 
+/*fun main() {
+    val res = angleInRadian(36,14,35)
+    println("Result: $res")
+}
+*/
 /**
  * Тривиальная (1 балл)
  *
@@ -96,6 +111,11 @@ fun angleInRadian(deg: Int, min: Int, sec: Int): Double =
 fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double =
     sqrt(sqr(x2 - x1) + sqr(y2 - y1))
 
+/*fun main() {
+    val res = trackLength(3.0,0.0,0.0,4.0)
+    println("Result: $res")
+}
+*/
 /**
  * Простая (2 балла)
  *
@@ -105,6 +125,11 @@ fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double =
 fun thirdDigit(number: Int): Int =
     number % 1000 / 100
 
+/*fun main() {
+    val res = thirdDigit(3801)
+    println("Result: $res")
+}
+*/
 /**
  * Простая (2 балла)
  *
@@ -115,6 +140,11 @@ fun thirdDigit(number: Int): Int =
 fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int =
     hoursArrive * 60 + minutesArrive - hoursDepart * 60 - minutesDepart
 
+/*fun main() {
+    val res = travelMinutes(9,25,13,1)
+    println("Result: $res")
+}
+*/
 /**
  * Простая (2 балла)
  *
@@ -127,6 +157,11 @@ fun accountInThreeYears(initial: Int, percent: Int): Double {
     return initial * perc100.pow(3)
 }
 
+/*fun main () {
+    val res = accountInThreeYears(100,10)
+    println("Result: $res")
+}
+*/
 /**
  * Простая (2 балла)
  *

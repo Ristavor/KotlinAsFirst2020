@@ -232,7 +232,40 @@ fun firstDuplicateIndex(str: String): Int = TODO()
  * или пустую строку при нарушении формата строки.
  * Все цены должны быть больше нуля либо равны нулю.
  */
-fun mostExpensive(description: String): String = TODO()
+fun mostExpensive(description: String): String {
+    try {
+        description.split("; ")
+    } catch (e: Exception) {
+        return ""
+    }
+    var list = description.split("; ")
+    val products = mutableMapOf<String, Double>()
+    for (i in list) {
+        try {
+            i.split(" ")
+        } catch (e: Exception) {
+            return ""
+        }
+        val listProducts = i.split(" ")
+        if (listProducts.size != 2) return ""
+        try {
+            listProducts[1].toDouble()
+        } catch (e: NumberFormatException) {
+            return ""
+        }
+        products += (listProducts[0] to listProducts[1].toDouble())
+    }
+    var maxValue = 0.0
+    var result = ""
+    for (j in products) {
+        if (j.value == maxValue) result = "Any good with price $maxValue"
+        if (j.value > maxValue) {
+            maxValue = j.value
+            result = j.key
+        }
+    }
+    return result
+}
 
 /**
  * Сложная (6 баллов)

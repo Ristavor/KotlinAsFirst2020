@@ -122,6 +122,14 @@ class Tests {
         assertEquals("", mostExpensive(""))
         assertEquals("Курица", mostExpensive("Хлеб 39.9; Молоко 62.5; Курица 184.0; Конфеты 89.9"))
         assertEquals("Вино", mostExpensive("Вино 255.0"))
+        assertEquals("", mostExpensive("Вино 255 Молоко 62.5"))
+        assertEquals("", mostExpensive("Вино255; молоко 62.5"))
+        assertEquals("", mostExpensive("2343 вино; молоко 14.6"))
+        assertEquals("Any good with price 0.0", mostExpensive("a 0"))
+        assertEquals("Any good with price 0.0", mostExpensive("a 0; b 0"))
+        assertEquals("Any good with price 2.0", mostExpensive("a 2; b 2"))
+        assertEquals("Any good with price 0.01", mostExpensive("a 0.01; d 0.01"))
+        assertEquals("Any good with price 0.0", mostExpensive("a 0"))
     }
 
     @Test

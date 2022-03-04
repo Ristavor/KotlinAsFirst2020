@@ -232,7 +232,22 @@ class Tests {
                 "печенье"
             )
         )
+        assertEquals(
+            "",
+            findCheapestStuff(
+                mapOf("" to ("" to 0.0), "Орео" to ("печенье" to 100.0)),
+                ""
+            )
+        )
+        assertEquals(
+            null,
+            lesson5.task1.findCheapestStuff(
+                mapOf("" to ("a" to 0.0)),
+                ""
+            )
+        )
     }
+
 
     @Test
     @Tag("3")
@@ -268,6 +283,7 @@ class Tests {
         assertFalse(hasAnagrams(listOf("рот", "свет", "код", "дверь")))
         assertFalse(hasAnagrams(listOf("поле", "полено")))
         assertTrue(hasAnagrams(listOf("лунь", "нуль")))
+        assertTrue(hasAnagrams(listOf("", "")))
     }
 
     @Test
