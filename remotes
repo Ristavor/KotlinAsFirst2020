@@ -1,0 +1,6 @@
+origin  https://github.com/shmelev2kv/KotlinAsFirst2020 (fetch)
+origin  https://github.com/shmelev2kv/KotlinAsFirst2020 (push)
+upstream-my     https://github.com/shmelev2kv/KotlinAsFirst2021 (fetch)
+upstream-my     https://github.com/shmelev2kv/KotlinAsFirst2021 (push)
+upstream-theirs https://github.com/rbgPOTATO/KotlinAsFirst2021 (fetch)
+upstream-theirs https://github.com/rbgPOTATO/KotlinAsFirst2021 (push)
